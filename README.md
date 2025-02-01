@@ -1,0 +1,3 @@
+This repository demonstrates a potential issue in Hack where unexpected results can arise from function calls. The issue may be related to function inlining and compiler optimization techniques. The `baz` function calculates based on the result of `bar` which depends on `foo`. However, due to compiler optimizations, the intermediate results might not be what you expect.
+
+The `bug.hack` file contains the original code exhibiting the unexpected behavior. The `bugSolution.hack` file provides a possible fix or a way to mitigate this issue, ensuring consistent and correct calculations.
